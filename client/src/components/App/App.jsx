@@ -1,6 +1,8 @@
+/* eslint-disable import/extensions */
 import React, { useState, useEffect } from 'react';
 
 import { Container, Row, Col } from 'react-bootstrap';
+import NavBar from '../NavBar/NavBar.jsx';
 
 // COMPONENTS
 import style from './App.css';
@@ -8,7 +10,7 @@ import style from './App.css';
 export default function App() {
   return (
     <Container fluid className={style.container}>
-      <Row>navbar</Row>
+      <NavBar />
       <Row>
         <Col>list</Col>
         <Col>
