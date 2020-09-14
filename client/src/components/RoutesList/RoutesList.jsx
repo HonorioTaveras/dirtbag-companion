@@ -4,9 +4,10 @@ import style from './RoutesList.css';
 export default function RoutesList({ routesList }) {
   return (
     <div className={style.container}>
-      {routesList.map((route, i) => (
+      {routesList.map((route) => (
         <div>
-          {route.route_name} {route.grade}
+          <span>{route.route_name + ' '}</span>
+          <span>{route.grade}</span>
         </div>
       ))}
     </div>

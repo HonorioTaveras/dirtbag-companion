@@ -13,6 +13,7 @@ import NavBar from '../NavBar/NavBar.jsx';
 import RoutesList from '../RoutesList/RoutesList.jsx';
 import RouteInfo from '../RouteInfo/RouteInfo.jsx';
 import Carousel from '../Carousel/Carousel.jsx';
+import RouteDescription from '../RouteDescription/RouteDescription.jsx';
 
 export default function App() {
   const [err, setErr] = useState(null);
@@ -58,7 +59,7 @@ export default function App() {
       <Container fluid className={style.container}>
         <NavBar />
         <Row>
-          <Col>
+          <Col xs={5}>
             <RoutesList routesList={routesList} />
           </Col>
           <Col>
@@ -66,9 +67,11 @@ export default function App() {
               <RouteInfo singleRoute={singleRoute} />
             </Row>
             <Row>
-              <Carousel />
+              <Carousel singleRoute={singleRoute} />
             </Row>
-            <Row>description</Row>
+            <Row>
+              <RouteDescription singleRoute={singleRoute} />
+            </Row>
           </Col>
         </Row>
       </Container>
