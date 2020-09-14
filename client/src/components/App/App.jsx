@@ -12,6 +12,7 @@ import style from './App.css';
 import NavBar from '../NavBar/NavBar.jsx';
 import RoutesList from '../RoutesList/RoutesList.jsx';
 import RouteInfo from '../RouteInfo/RouteInfo.jsx';
+import Carousel from '../Carousel/Carousel.jsx';
 
 export default function App() {
   const [err, setErr] = useState(null);
@@ -64,7 +65,9 @@ export default function App() {
             <Row>
               <RouteInfo singleRoute={singleRoute} />
             </Row>
-            <Row>carousel</Row>
+            <Row>
+              <Carousel />
+            </Row>
             <Row>description</Row>
           </Col>
         </Row>
