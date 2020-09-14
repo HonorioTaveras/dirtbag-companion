@@ -6,16 +6,19 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 import { Container, Row, Col } from 'react-bootstrap';
-import NavBar from '../NavBar/NavBar.jsx';
-import RoutesList from '../RoutesList/RoutesList.jsx';
 
 // COMPONENTS
 import style from './App.css';
+import NavBar from '../NavBar/NavBar.jsx';
+import RoutesList from '../RoutesList/RoutesList.jsx';
+import RouteInfo from '../RouteInfo/RouteInfo.jsx';
 
 export default function App() {
   const [err, setErr] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [routesList, setRoutesList] = useState([]);
+  const [routeId, setRouteId] = useState(1);
+  const [singleRoute, setSingleRoute] = useState({});
 
   useEffect(() => {
     Axios.get('/routes').then(
@@ -31,6 +34,20 @@ export default function App() {
     );
   }, []);
 
+  useEffect(() => {
+    Axios.get(`routes/${routeId}`).then(
+      (res) => {
+        console.log('single route: ', res.data);
+        setIsLoaded(true);
+        setSingleRoute(res.data);
+      },
+      (err) => {
+        setIsLoaded(true);
+        setErr(err);
+      },
+    );
+  }, [routeId]);
+
   if (err) {
     return <div>Error: {err.message}</div>;
   } else if (!isLoaded) {
@@ -44,8 +61,9 @@ export default function App() {
             <RoutesList routesList={routesList} />
           </Col>
           <Col>
-            <Row>name and route type </Row>
-            <Row>grades and ratings</Row>
+            <Row>
+              <RouteInfo singleRoute={singleRoute} />
+            </Row>
             <Row>carousel</Row>
             <Row>description</Row>
           </Col>
