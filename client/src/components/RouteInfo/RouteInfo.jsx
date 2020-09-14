@@ -21,7 +21,7 @@ export default function RouteInfo({ singleRoute }) {
       <div>
         <span>{singleRoute.grade + ' '}</span>
         <span>
-          <Rating name="read-only" readOnly value={rating} precision={0.25} size="small" />
+          <Rating name="read-only" readOnly value={rating} precision={0.25} />
         </span>
       </div>
     </div>

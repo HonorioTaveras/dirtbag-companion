@@ -59,7 +59,7 @@ export default function App() {
       <Container fluid className={style.container}>
         <NavBar />
         <Row>
-          <Col xs={5}>
+          <Col xs={5} md={4} lg={3} xl={3}>
             <RoutesList routesList={routesList} />
           </Col>
           <Col>

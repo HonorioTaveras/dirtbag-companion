@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Rating } from '@material-ui/lab';
+
 import style from './RoutesList.css';
 
 export default function RoutesList({ routesList }) {
@@ -6,7 +8,16 @@ export default function RoutesList({ routesList }) {
     <div className={style.container}>
       {routesList.map((route) => (
         <div>
-          <span>{route.route_name + ' '}</span>
+          <span>
+            <Rating
+              name="read-only"
+              readOnly
+              value={route.rating}
+              precision={0.25}
+              size="small"
+            />
+          </span>
+          <span>{` ${route.route_name} `}</span>
           <span>{route.grade}</span>
         </div>
       ))}
