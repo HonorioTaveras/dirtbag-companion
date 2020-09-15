@@ -1,5 +1,5 @@
 const db = require('../index.js');
-const RouteList = require('../models/routeList.js');
+const Routes = require('../models/routes.js');
 
 const routeListData = [
   {
@@ -1916,7 +1916,7 @@ const routeListData = [
 ];
 
 const insertRouteList = () => {
-  RouteList.create(routeListData).then(() => db.disconnect());
+  Routes.create(routeListData).then(() => db.disconnect());
 };
 
 insertRouteList();

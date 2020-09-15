@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const db = require('../index.js');
 
-const routeListSchema = new mongoose.Schema({
+const routesSchema = new mongoose.Schema({
   route_id: { type: Number, index: true, required: true },
   route_name: String,
   route_type: String,
@@ -16,6 +17,6 @@ const routeListSchema = new mongoose.Schema({
   ],
 });
 
-const RouteList = mongoose.model('RouteList', routeListSchema);
+const Routes = mongoose.model('Routes', routesSchema);
 
-module.exports = RouteList;
+module.exports = Routes;
