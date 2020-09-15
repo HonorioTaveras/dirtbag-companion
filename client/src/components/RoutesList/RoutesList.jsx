@@ -18,6 +18,7 @@ export default function RoutesList({ routesList }) {
             />
           </span>
           <span>{` ${route.route_name} `}</span>
+          <span>{`${route.route_type[0]} `}</span>
           <span>{route.grade}</span>
         </div>
       ))}

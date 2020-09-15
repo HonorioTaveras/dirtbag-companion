@@ -12,7 +12,6 @@ module.exports = {
         "route_type": "Trad",
         "grade": "5.6",
         "rating": 3.75,
-        "pitches": 3,
       },
       {
         "route_id": 2,
@@ -20,7 +19,6 @@ module.exports = {
         "route_type": "Sport",
         "grade": "5.11a",
         "rating": 4,
-        "pitches": 1,
       },
       {
         "route_id": 3,
@@ -28,7 +26,6 @@ module.exports = {
         "route_type": "Trad",
         "grade": "5.6 R",
         "rating": 4.5,
-        "pitches": 5,
       },
       {
         "route_id": 4,
@@ -36,7 +33,6 @@ module.exports = {
         "route_type": "Trad",
         "grade": "5.9+",
         "rating": 4.75,
-        "pitches": 6,
       },
       {
         "route_id": 5,
@@ -44,7 +40,6 @@ module.exports = {
         "route_type": "Trad",
         "grade": "5.7",
         "rating": 4.75,
-        "pitches": 6,
       },
     ];
   },

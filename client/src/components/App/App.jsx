@@ -56,10 +56,10 @@ export default function App() {
     return <div>Loading...</div>;
   } else {
     return (
-      <Container fluid className={style.container}>
+      <Container className={style.container}>
         <NavBar />
         <Row>
-          <Col xs={5} md={4} lg={3} xl={3}>
+          <Col xs={4}>
             <RoutesList routesList={routesList} />
           </Col>
           <Col>
