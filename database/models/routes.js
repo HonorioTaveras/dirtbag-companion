@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const db = require('../index.js');
+require('../index.js');
 
 const routesSchema = new mongoose.Schema({
   route_id: { type: Number, index: true, required: true },
