@@ -19,7 +19,7 @@ export default function App() {
   const [err, setErr] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [routesList, setRoutesList] = useState([]);
-  const [routeId, setRouteId] = useState(1);
+  const [routeId, setRouteId] = useState(2);
   const [singleRoute, setSingleRoute] = useState({});
 
   useEffect(() => {
@@ -41,7 +41,7 @@ export default function App() {
       (res) => {
         console.log('single route: ', res.data);
         setIsLoaded(true);
-        setSingleRoute(res.data);
+        setSingleRoute(res.data[0]);
       },
       (err) => {
         setIsLoaded(true);
@@ -49,6 +49,11 @@ export default function App() {
       },
     );
   }, [routeId]);
+
+  const handleRouteNameClick = (e) => {
+    const id = e.target.getAttribute('id');
+    setRouteId(id);
+  };
 
   if (err) {
     return <div>Error: {err.message}</div>;
@@ -60,7 +65,10 @@ export default function App() {
         <NavBar />
         <Row>
           <Col xs={4}>
-            <RoutesList routesList={routesList} />
+            <RoutesList
+              routesList={routesList}
+              handleRouteNameClick={handleRouteNameClick}
+            />
           </Col>
           <Col>
             <Row>

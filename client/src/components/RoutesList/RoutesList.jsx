@@ -1,12 +1,14 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useState, useEffect } from 'react';
 import { Rating } from '@material-ui/lab';
 
 import style from './RoutesList.css';
 
-export default function RoutesList({ routesList }) {
+export default function RoutesList({ routesList, handleRouteNameClick }) {
   return (
     <div className={style.container}>
-      {routesList.map((route) => (
+      {routesList.map((route, i) => (
         <div>
           <span>
             <Rating
@@ -17,7 +19,12 @@ export default function RoutesList({ routesList }) {
               size="small"
             />
           </span>
-          <span>{` ${route.route_name} `}</span>
+          <span
+            onClick={(e) => handleRouteNameClick(e)}
+            id={route.route_id}
+          >
+            {` ${route.route_name} `}
+          </span>
           <span>{`${route.route_type[0]} `}</span>
           <span>{route.grade}</span>
         </div>
