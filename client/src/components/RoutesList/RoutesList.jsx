@@ -8,7 +8,7 @@ import style from './RoutesList.css';
 export default function RoutesList({ routesList, handleRouteNameClick }) {
   return (
     <div className={style.container}>
-      {routesList.map((route, i) => (
+      {routesList.map((route) => (
         <div>
           <span>
             <Rating

@@ -13,13 +13,11 @@ export default function RouteInfo({ singleRoute }) {
   return (
     <div>
       <div>
-        {/* FIRST ROW */}
-        <span>{singleRoute.route_name + ' '}</span>
+        <span>{`${singleRoute.route_name} `}</span>
         <span>{singleRoute.route_type}</span>
       </div>
-      {/* SECOND ROw */}
       <div>
-        <span>{singleRoute.grade + ' '}</span>
+        <span>{`${singleRoute.grade} `}</span>
         <span>
           <Rating name="read-only" readOnly value={rating} precision={0.25} />
         </span>
