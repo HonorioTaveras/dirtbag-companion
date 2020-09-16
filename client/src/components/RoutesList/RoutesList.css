@@ -1,3 +1,15 @@
 .container {
-  /* border: 1px solid darkorange; */
+  font-size: small;
+  background-color: #f2f2f2;
+}
+
+.routeName {
+  font-size: small;
+  color: darkslategray;
+  text-decoration: underline;
+}
+
+.routeName:hover {
+  cursor: pointer;
+  color: black;
 }

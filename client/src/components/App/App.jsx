@@ -19,7 +19,7 @@ export default function App() {
   const [err, setErr] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [routesList, setRoutesList] = useState([]);
-  const [routeId, setRouteId] = useState(2);
+  const [routeId, setRouteId] = useState(5);
   const [singleRoute, setSingleRoute] = useState({});
 
   useEffect(() => {
@@ -64,12 +64,6 @@ export default function App() {
       <Container className={style.container}>
         <NavBar />
         <Row>
-          <Col xs={4}>
-            <RoutesList
-              routesList={routesList}
-              handleRouteNameClick={handleRouteNameClick}
-            />
-          </Col>
           <Col>
             <Row>
               <RouteInfo singleRoute={singleRoute} />
@@ -80,6 +74,12 @@ export default function App() {
             <Row>
               <RouteDescription singleRoute={singleRoute} />
             </Row>
+          </Col>
+          <Col xs={4}>
+            <RoutesList
+              routesList={routesList}
+              handleRouteNameClick={handleRouteNameClick}
+            />
           </Col>
         </Row>
       </Container>

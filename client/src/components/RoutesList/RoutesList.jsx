@@ -20,6 +20,7 @@ export default function RoutesList({ routesList, handleRouteNameClick }) {
             />
           </span>
           <span
+            className={style.routeName}
             onClick={(e) => handleRouteNameClick(e)}
             id={route.route_id}
           >

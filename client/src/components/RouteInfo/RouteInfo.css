@@ -1,0 +1,12 @@
+.grade {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bottomData {
+  font-size: small;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
