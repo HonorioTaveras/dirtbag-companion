@@ -2,8 +2,9 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-const mongoURI = 'mongodb://localhost:27017/dbagcompanion';
+const mongoURI = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@dirtbagcluster.fdo3g.mongodb.net/dirtbag-companion?retryWrites=true&w=majority`;
 
 const db = mongoose.connect(mongoURI, {
   useNewUrlParser: true,

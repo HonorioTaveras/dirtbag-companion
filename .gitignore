@@ -29,3 +29,4 @@ public/
 # Configuration
 .vscode/
 config.js
+.env
