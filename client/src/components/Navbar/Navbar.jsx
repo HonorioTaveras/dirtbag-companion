@@ -12,12 +12,12 @@ import style from './NavBar.css';
 export default function NavBar() {
   return (
     <Navbar bg="dark" variant="dark" className={style.navMargin}>
-      <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+      <Navbar.Brand href="#home">Dirtbag Companion</Navbar.Brand>
       <Nav className="mr-auto" />
-      <Form inline>
+      {/* <Form inline>
         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
         <Button variant="outline-info">Search</Button>
-      </Form>
+      </Form> */}
     </Navbar>
   );
 }

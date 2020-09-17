@@ -491,7 +491,7 @@ const routeListData = [
       },
       {
         url:
-          'urlPhttps://cdn2.apstatic.com/photos/climb/115572068_large_1540504567.jpglaceholder',
+          'https://cdn2.apstatic.com/photos/climb/105944883_large_1557953089.jpg',
       },
       {
         url:

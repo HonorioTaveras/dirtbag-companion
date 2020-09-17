@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const express = require('express');
 const cors = require('cors');
 
@@ -6,7 +7,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const Routes = require('../database/models/routes.js');
 
-const port = 4444;
+const PORT = process.env.PORT || 4444;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,6 +26,6 @@ app.get('/routes/:route_id', (req, res) => {
     .catch((err) => res.status(500).send(err));
 });
 
-app.listen(port, () => {
-  console.log(`Listening at http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Listening at http://localhost:${PORT}`);
 });
