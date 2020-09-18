@@ -1,6 +1,8 @@
 # Dirtbag Companion
 An application for dirtbag (and non-dirtbag) climbers and outdoors enthusiasts!
 
+This single page mini app is here to serve the user by providing them with general information about fifty of the some of the most popular routes within the Boulder outdoor climbing scene. Each route has a star rating, the route's grade, the type of route it is, how many pitches there are on it, about 3-5 images of the route, usually including the crux, and a detailed description about it, sometimes including higher level beta. (don't worry, nothing too specific that it would spoil the fun!) The app also includes a side bar that contains all of the available routes that the user is able to click on and see all of the information about that route. This application is still currently being worked on and the user can expect more features and styles to continue to be updated. The master branch of this repo, will always have working code! Thank you so much for viewing and I hope you dirtbag climbers (and non dirtbag climbers alike) enjoy! 
+
 ![cryptocurrency-charting-tool-demo](dirtbag-companion.gif)
 
 ## Getting Started
