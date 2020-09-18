@@ -40,14 +40,14 @@ In your browser, open up a window or tab to http://localhost:3456/
 
 ## Built With
 
-* [MongoDB] (https://www.mongodb.com/) w/ [MongooseJS] (https://mongoosejs.com/)
+* [MongoDB](https://www.mongodb.com/) w/ [MongooseJS](https://mongoosejs.com/)
 * [Express](https://expressjs.com/)
 * [React](https://reactjs.org/)
 * [Node.js](https://nodejs.org/en/)
 
 ## Deployed with
 
-* [Heroku] (https://www.heroku.com/home)
+* [Heroku](https://www.heroku.com/home)
 
 ## Authors
 
@@ -56,4 +56,4 @@ In your browser, open up a window or tab to http://localhost:3456/
 
 ## Acknowledgments
 
-* Hats off to [Mountain Project] (https://www.mountainproject.com/) for the inspiration and for the information for my API
+* Hats off to [Mountain Project](https://www.mountainproject.com/) for the inspiration and for the information for my API
