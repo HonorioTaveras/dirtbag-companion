@@ -1,4 +1,4 @@
-# dirtbag-companion
+# Dirtbag Companion
 An application for dirtbag (and non-dirtbag) climbers and outdoors enthusiasts!
 
 ![cryptocurrency-charting-tool-demo](dirtbag-companion.gif)
