@@ -36,7 +36,7 @@ $ npm run start
 $ npm run react-dev
 ```
 
-In your browser, open up a window or tab to http://localhost:3456/
+In your browser, open up a window or tab to http://localhost:4444/
 
 ## Built With
 
